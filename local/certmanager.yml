@@ -12,7 +12,7 @@ spec:
     repoURL: https://github.com/wep4you/certmanager-kustomize.git
     targetRevision: main
   destination:
-    namespace: default
+    namespace: cert-manager
     server: https://kubernetes.default.svc
   syncPolicy:
     syncOptions:
