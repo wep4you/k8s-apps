@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: certmanager
-  namespace: certmanager
+  name: cert-manager
+  namespace: cert-manager
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -12,7 +12,7 @@ spec:
     repoURL: https://github.com/wep4you/certmanager-kustomize.git
     targetRevision: main
   destination:
-    namespace: certmanager
+    namespace: cert-manager
     server: https://kubernetes.default.svc
   syncPolicy:
     syncOptions:
