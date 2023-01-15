@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    path: overlays/local
-    repoURL: https://github.com/wep4you/uptime-kuma-kustomize.git
+    path: overlays/wep4you
+    repoURL: https://github.com/wep4you/uptime-kuma-wep4you.git
     targetRevision: main
   destination:
     namespace: uptime-kuma
